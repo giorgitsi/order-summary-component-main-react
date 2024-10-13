@@ -84,13 +84,39 @@ body {
 
 .anual-plan-link {
     font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    opacity: 1;
+
+    transition: 0.4s;
+
 }
 
 .anual-plan-link:hover {
-    text-decoration: none;
-    transition: color 0.2s, text-decoration 2s;
-    font-weight: 700;
-    color: hsl(224, 23%, 55%);
+
+    opacity: 0.7;
+
+}
+
+.anual-plan-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    bottom: 0px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+.anual-plan-link:hover::before {
+
+    opacity: 0;
+
 }
 
 .btn-container {

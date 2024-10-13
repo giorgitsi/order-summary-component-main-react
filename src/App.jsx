@@ -12,7 +12,6 @@ function App() {
     <>
 
 
-
       <div className='card-container'>
         <div className='img-container'>
           <img className='img-hero' src={ImgHero} alt="" />
@@ -34,7 +33,8 @@ function App() {
             </div>
 
             <div className='anual-plan-link-container'>
-              <a className='anual-plan-link' href="#">Change</a>
+              <a className='anual-plan-link' href="#">Change
+              </a>
             </div>
           </div>
 
