@@ -3,11 +3,16 @@ import './App.css'
 import ImgMusic from './assets/images/icon-music.svg'
 import ImgHero from './assets/images/illustration-hero.svg'
 
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+
+
       <div className='card-container'>
         <div className='img-container'>
           <img className='img-hero' src={ImgHero} alt="" />
@@ -22,17 +27,21 @@ function App() {
           <div className='anual-plan-container'>
             <div className='cost-anual-plan'>
               <img src={ImgMusic} alt="" />
-              <p>Annual Plan</p>
-              <p>59.99/year</p>
+              <div>
+                <p className='annual-plan'>Annual Plan</p>
+                <p className='cost'>59.99/year</p>
+              </div>
             </div>
 
-            <div anual-plan-link>
-              <a href="#">Change</a>
+            <div className='anual-plan-link-container'>
+              <a className='anual-plan-link' href="#">Change</a>
             </div>
           </div>
 
-          <button>Proceed to Payment</button>
-          <button>Cancel Order</button>
+          <div className='btn-container'>
+            <button className='btn-payment'>Proceed to Payment</button>
+            <button className='btn-cancel-order'>Cancel Order</button>
+          </div>
         </div>
       </div>
     </>
